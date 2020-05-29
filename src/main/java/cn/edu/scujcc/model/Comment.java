@@ -10,11 +10,18 @@ import com.fasterxml.jackson.annotation.JsonFormat;
  *
  */
 public class Comment {
-	private String content;
 	private String author;
+	private String content;
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private LocalDateTime dt = LocalDateTime.now();
+	private int star = 0;//点赞量
 	
+	public int getStar() {
+		return star;
+	}
+	public void setStar(int star) {
+		this.star = star;
+	}
 	public String getContent() {
 		return content;
 	}
@@ -40,6 +47,7 @@ public class Comment {
 		result = prime * result + ((author == null) ? 0 : author.hashCode());
 		result = prime * result + ((content == null) ? 0 : content.hashCode());
 		result = prime * result + ((dt == null) ? 0 : dt.hashCode());
+		result = prime * result + star;
 		return result;
 	}
 	@Override
@@ -66,11 +74,13 @@ public class Comment {
 				return false;
 		} else if (!dt.equals(other.dt))
 			return false;
+		if (star != other.star)
+			return false;
 		return true;
 	}
 	@Override
 	public String toString() {
-		return "Comment [content=" + content + ", author=" + author + ", dt=" + dt + "]";
+		return "Comment [author=" + author + ", content=" + content + ", dt=" + dt + ", star=" + star + "]";
 	}
 	
 	

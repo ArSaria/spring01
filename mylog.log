@@ -1,0 +1,261 @@
+2020-05-19 17:57:56.893  INFO 10632 --- [restartedMain] cn.edu.scujcc.DdtvApplication            : Starting DdtvApplication on Kinimos with PID 10632 (E:\Spring\Projects\spring01\bin\main started by ASUS in E:\Spring\Projects\spring01)
+2020-05-19 17:57:56.902 DEBUG 10632 --- [restartedMain] cn.edu.scujcc.DdtvApplication            : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-05-19 17:57:56.902  INFO 10632 --- [restartedMain] cn.edu.scujcc.DdtvApplication            : No active profile set, falling back to default profiles: default
+2020-05-19 17:57:57.408  INFO 10632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-05-19 17:57:57.421 DEBUG 10632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for MongoDB repositories in packages cn.edu.scujcc.
+2020-05-19 17:57:57.428 DEBUG 10632 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [E:\Spring\Projects\spring01\bin\main\cn\edu\scujcc\dao\ChannelRepository.class]
+2020-05-19 17:57:57.429 DEBUG 10632 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [E:\Spring\Projects\spring01\bin\main\cn\edu\scujcc\dao\UserRepository.class]
+2020-05-19 17:57:57.461  INFO 10632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40ms. Found 2 MongoDB repository interfaces.
+2020-05-19 17:57:57.926  INFO 10632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 989 ms
+2020-05-19 17:57:58.225 DEBUG 10632 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-05-19 17:57:58.225 DEBUG 10632 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-05-19 17:57:58.240 DEBUG 10632 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class java.time.Instant as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-05-19 17:57:58.241 DEBUG 10632 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.Instant to class java.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2020-05-19 17:57:58.294 DEBUG 10632 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for cn.edu.scujcc.dao.UserRepository…
+2020-05-19 17:57:58.344 DEBUG 10632 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class cn.edu.scujcc.model.User for index information.
+2020-05-19 17:57:58.376 DEBUG 10632 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for cn.edu.scujcc.dao.UserRepository.
+2020-05-19 17:57:58.512 DEBUG 10632 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for cn.edu.scujcc.dao.ChannelRepository…
+2020-05-19 17:57:58.517 DEBUG 10632 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class cn.edu.scujcc.model.Comment for index information.
+2020-05-19 17:57:58.518 DEBUG 10632 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class cn.edu.scujcc.model.Channel for index information.
+2020-05-19 17:57:58.524 DEBUG 10632 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for cn.edu.scujcc.dao.ChannelRepository.
+2020-05-19 17:57:58.792  INFO 10632 --- [restartedMain] cn.edu.scujcc.DdtvApplication            : Started DdtvApplication in 2.096 seconds (JVM running for 3.138)
+2020-05-19 17:59:55.056  INFO 10632 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-05-19 17:59:55.061  INFO 10632 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-05-19 17:59:55.071 DEBUG 10632 --- [http-nio-8080-exec-1] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 17:59:55.071 DEBUG 10632 --- [http-nio-8080-exec-1] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？不是
+2020-05-19 18:00:34.080 DEBUG 10632 --- [http-nio-8080-exec-6] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { "username" : "Saria", "password" : "619822043"}, Fields: {}, Sort: {}
+2020-05-19 18:00:34.090 DEBUG 10632 --- [http-nio-8080-exec-6] o.s.data.mongodb.core.MongoTemplate      : find using query: { "username" : "Saria", "password" : "619822043"} fields: Document{{}} for class: class cn.edu.scujcc.model.User in collection: user
+2020-05-19 18:00:34.220 DEBUG 10632 --- [http-nio-8080-exec-6] cn.edu.scujcc.service.UserService        : Saria1589882434219经过md5加密后：264b8efeed0e4cd1c27be0dbf5820de8
+2020-05-19 18:00:42.937 DEBUG 10632 --- [http-nio-8080-exec-10] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:00:42.938 DEBUG 10632 --- [http-nio-8080-exec-10] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？不是
+2020-05-19 18:00:49.437 DEBUG 10632 --- [http-nio-8080-exec-4] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:00:49.437 DEBUG 10632 --- [http-nio-8080-exec-4] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？不是
+2020-05-19 18:01:00.256 DEBUG 10632 --- [http-nio-8080-exec-5] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { "username" : "Saria", "password" : "619822043"}, Fields: {}, Sort: {}
+2020-05-19 18:01:00.257 DEBUG 10632 --- [http-nio-8080-exec-5] o.s.data.mongodb.core.MongoTemplate      : find using query: { "username" : "Saria", "password" : "619822043"} fields: Document{{}} for class: class cn.edu.scujcc.model.User in collection: user
+2020-05-19 18:01:00.258 DEBUG 10632 --- [http-nio-8080-exec-5] cn.edu.scujcc.service.UserService        : Saria1589882460258经过md5加密后：204cfe85d91b773279a7fc9ab5fa686c
+2020-05-19 18:01:09.794 DEBUG 10632 --- [http-nio-8080-exec-2] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { "username" : "Saria", "password" : "619822043"}, Fields: {}, Sort: {}
+2020-05-19 18:01:09.795 DEBUG 10632 --- [http-nio-8080-exec-2] o.s.data.mongodb.core.MongoTemplate      : find using query: { "username" : "Saria", "password" : "619822043"} fields: Document{{}} for class: class cn.edu.scujcc.model.User in collection: user
+2020-05-19 18:01:09.798 DEBUG 10632 --- [http-nio-8080-exec-2] cn.edu.scujcc.service.UserService        : Saria1589882469798经过md5加密后：d0fb437122b6c488b97e3752d94c301b
+2020-05-19 18:01:26.702 DEBUG 10632 --- [http-nio-8080-exec-7] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:01:26.702 DEBUG 10632 --- [http-nio-8080-exec-7] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？不是
+2020-05-19 18:02:31.178 DEBUG 10632 --- [http-nio-8080-exec-9] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { "username" : "Saria", "password" : "619822043"}, Fields: {}, Sort: {}
+2020-05-19 18:02:31.178 DEBUG 10632 --- [http-nio-8080-exec-9] o.s.data.mongodb.core.MongoTemplate      : find using query: { "username" : "Saria", "password" : "619822043"} fields: Document{{}} for class: class cn.edu.scujcc.model.User in collection: user
+2020-05-19 18:02:31.182 DEBUG 10632 --- [http-nio-8080-exec-9] cn.edu.scujcc.service.UserService        : Saria1589882551182经过md5加密后：43edf9c2b9b9ed971fce4e6e01d37090
+2020-05-19 18:05:13.609 DEBUG 10632 --- [http-nio-8080-exec-1] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { "username" : "Saria", "password" : "619822043"}, Fields: {}, Sort: {}
+2020-05-19 18:05:13.610 DEBUG 10632 --- [http-nio-8080-exec-1] o.s.data.mongodb.core.MongoTemplate      : find using query: { "username" : "Saria", "password" : "619822043"} fields: Document{{}} for class: class cn.edu.scujcc.model.User in collection: user
+2020-05-19 18:05:13.612 DEBUG 10632 --- [http-nio-8080-exec-1] cn.edu.scujcc.service.UserService        : Saria1589882713612经过md5加密后：58017eff690f63004e29dccff2e89433
+2020-05-19 18:06:35.980 DEBUG 10632 --- [http-nio-8080-exec-10] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:06:35.981 DEBUG 10632 --- [http-nio-8080-exec-10] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？是
+2020-05-19 18:06:35.983  INFO 10632 --- [http-nio-8080-exec-10] cn.edu.scujcc.api.ChannelController      : 正在读取所有频道信息, token=58017eff690f63004e29dccff2e89433
+2020-05-19 18:06:35.984  INFO 10632 --- [http-nio-8080-exec-10] cn.edu.scujcc.api.ChannelController      : 当前用户是：Saria1589882713612
+2020-05-19 18:06:35.997 DEBUG 10632 --- [http-nio-8080-exec-10] cn.edu.scujcc.service.ChannelService     : 准备从数据库读取所有频道信息...
+2020-05-19 18:06:35.998 DEBUG 10632 --- [http-nio-8080-exec-10] o.s.data.mongodb.core.MongoTemplate      : find using query: {} fields: Document{{}} for class: class cn.edu.scujcc.model.Channel in collection: channel
+2020-05-19 18:06:36.068 ERROR 10632 --- [channels.data] n.s.e.store.disk.DiskStorageFactory      : Disk Write of SimpleKey [] failed: 
+
+java.io.NotSerializableException: cn.edu.scujcc.model.Comment
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject(Unknown Source)
+	at java.util.ArrayList.writeObject(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at java.io.ObjectStreamClass.invokeWriteObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeSerialData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.defaultWriteFields(Unknown Source)
+	at java.io.ObjectOutputStream.writeSerialData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject(Unknown Source)
+	at java.util.ArrayList.writeObject(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at java.io.ObjectStreamClass.invokeWriteObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeSerialData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.defaultWriteFields(Unknown Source)
+	at java.io.ObjectOutputStream.defaultWriteObject(Unknown Source)
+	at net.sf.ehcache.Element.writeObject(Element.java:867)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at java.io.ObjectStreamClass.invokeWriteObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeSerialData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject(Unknown Source)
+	at net.sf.ehcache.util.MemoryEfficientByteArrayOutputStream.serialize(MemoryEfficientByteArrayOutputStream.java:97)
+	at net.sf.ehcache.store.disk.DiskStorageFactory.serializeElement(DiskStorageFactory.java:403)
+	at net.sf.ehcache.store.disk.DiskStorageFactory.write(DiskStorageFactory.java:385)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$DiskWriteTask.call(DiskStorageFactory.java:477)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$PersistentDiskWriteTask.call(DiskStorageFactory.java:1071)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$PersistentDiskWriteTask.call(DiskStorageFactory.java:1055)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+2020-05-19 18:07:22.407 DEBUG 10632 --- [http-nio-8080-exec-4] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { "username" : "Saria", "password" : "619822043"}, Fields: {}, Sort: {}
+2020-05-19 18:07:22.408 DEBUG 10632 --- [http-nio-8080-exec-4] o.s.data.mongodb.core.MongoTemplate      : find using query: { "username" : "Saria", "password" : "619822043"} fields: Document{{}} for class: class cn.edu.scujcc.model.User in collection: user
+2020-05-19 18:07:22.409 DEBUG 10632 --- [http-nio-8080-exec-4] cn.edu.scujcc.service.UserService        : Saria1589882842409经过md5加密后：3406a08e2bfbe35b860a518daad90379
+2020-05-19 18:07:24.350 DEBUG 10632 --- [http-nio-8080-exec-5] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:07:24.351 DEBUG 10632 --- [http-nio-8080-exec-5] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？是
+2020-05-19 18:07:24.351  INFO 10632 --- [http-nio-8080-exec-5] cn.edu.scujcc.api.ChannelController      : 正在读取所有频道信息, token=58017eff690f63004e29dccff2e89433
+2020-05-19 18:07:24.352  INFO 10632 --- [http-nio-8080-exec-5] cn.edu.scujcc.api.ChannelController      : 当前用户是：Saria1589882713612
+2020-05-19 18:07:29.918 DEBUG 10632 --- [http-nio-8080-exec-2] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:07:29.919 DEBUG 10632 --- [http-nio-8080-exec-2] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？是
+2020-05-19 18:07:29.919  INFO 10632 --- [http-nio-8080-exec-2] cn.edu.scujcc.api.ChannelController      : 正在读取所有频道信息, token=58017eff690f63004e29dccff2e89433
+2020-05-19 18:07:29.919  INFO 10632 --- [http-nio-8080-exec-2] cn.edu.scujcc.api.ChannelController      : 当前用户是：Saria1589882713612
+2020-05-19 18:07:33.501 DEBUG 10632 --- [http-nio-8080-exec-7] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:07:33.502 DEBUG 10632 --- [http-nio-8080-exec-7] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？是
+2020-05-19 18:07:33.502  INFO 10632 --- [http-nio-8080-exec-7] cn.edu.scujcc.api.ChannelController      : 正在读取所有频道信息, token=58017eff690f63004e29dccff2e89433
+2020-05-19 18:07:33.502  INFO 10632 --- [http-nio-8080-exec-7] cn.edu.scujcc.api.ChannelController      : 当前用户是：Saria1589882713612
+2020-05-19 18:07:42.537 DEBUG 10632 --- [http-nio-8080-exec-8] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:07:42.537 DEBUG 10632 --- [http-nio-8080-exec-8] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？是
+2020-05-19 18:07:42.538  INFO 10632 --- [http-nio-8080-exec-8] cn.edu.scujcc.api.ChannelController      : 正在读取所有频道信息, token=3406a08e2bfbe35b860a518daad90379
+2020-05-19 18:07:42.538  INFO 10632 --- [http-nio-8080-exec-8] cn.edu.scujcc.api.ChannelController      : 当前用户是：Saria1589882842409
+2020-05-19 18:07:50.491 DEBUG 10632 --- [http-nio-8080-exec-9] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:07:50.491 DEBUG 10632 --- [http-nio-8080-exec-9] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？不是
+2020-05-19 18:07:53.952 DEBUG 10632 --- [http-nio-8080-exec-3] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:07:53.952 DEBUG 10632 --- [http-nio-8080-exec-3] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？不是
+2020-05-19 18:07:56.927 DEBUG 10632 --- [http-nio-8080-exec-1] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:07:56.927 DEBUG 10632 --- [http-nio-8080-exec-1] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？是
+2020-05-19 18:07:56.927  INFO 10632 --- [http-nio-8080-exec-1] cn.edu.scujcc.api.ChannelController      : 正在读取所有频道信息, token=3406a08e2bfbe35b860a518daad90379
+2020-05-19 18:07:56.928  INFO 10632 --- [http-nio-8080-exec-1] cn.edu.scujcc.api.ChannelController      : 当前用户是：Saria1589882842409
+2020-05-19 18:08:00.596 DEBUG 10632 --- [http-nio-8080-exec-6] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { "username" : "Saria", "password" : "619822043"}, Fields: {}, Sort: {}
+2020-05-19 18:08:00.597 DEBUG 10632 --- [http-nio-8080-exec-6] o.s.data.mongodb.core.MongoTemplate      : find using query: { "username" : "Saria", "password" : "619822043"} fields: Document{{}} for class: class cn.edu.scujcc.model.User in collection: user
+2020-05-19 18:08:00.598 DEBUG 10632 --- [http-nio-8080-exec-6] cn.edu.scujcc.service.UserService        : Saria1589882880598经过md5加密后：36058fb761b9dbb84d0ce96794daea83
+2020-05-19 18:08:03.843 DEBUG 10632 --- [http-nio-8080-exec-10] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:08:03.843 DEBUG 10632 --- [http-nio-8080-exec-10] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？是
+2020-05-19 18:08:03.843  INFO 10632 --- [http-nio-8080-exec-10] cn.edu.scujcc.api.ChannelController      : 正在读取所有频道信息, token=3406a08e2bfbe35b860a518daad90379
+2020-05-19 18:08:03.843  INFO 10632 --- [http-nio-8080-exec-10] cn.edu.scujcc.api.ChannelController      : 当前用户是：Saria1589882842409
+2020-05-19 18:08:08.146 DEBUG 10632 --- [http-nio-8080-exec-4] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:08:08.146 DEBUG 10632 --- [http-nio-8080-exec-4] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？是
+2020-05-19 18:08:08.147  INFO 10632 --- [http-nio-8080-exec-4] cn.edu.scujcc.api.ChannelController      : 正在读取所有频道信息, token=3406a08e2bfbe35b860a518daad90379
+2020-05-19 18:08:08.147  INFO 10632 --- [http-nio-8080-exec-4] cn.edu.scujcc.api.ChannelController      : 当前用户是：Saria1589882842409
+2020-05-19 18:08:10.495 DEBUG 10632 --- [http-nio-8080-exec-5] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:08:10.496 DEBUG 10632 --- [http-nio-8080-exec-5] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？是
+2020-05-19 18:08:10.497  INFO 10632 --- [http-nio-8080-exec-5] cn.edu.scujcc.api.ChannelController      : 正在读取所有频道信息, token=36058fb761b9dbb84d0ce96794daea83
+2020-05-19 18:08:10.497  INFO 10632 --- [http-nio-8080-exec-5] cn.edu.scujcc.api.ChannelController      : 当前用户是：Saria1589882880598
+2020-05-19 18:08:26.002 DEBUG 10632 --- [http-nio-8080-exec-2] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:08:26.002 DEBUG 10632 --- [http-nio-8080-exec-2] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？是
+2020-05-19 18:08:26.002  INFO 10632 --- [http-nio-8080-exec-2] cn.edu.scujcc.api.ChannelController      : 正在读取所有频道信息, token=58017eff690f63004e29dccff2e89433
+2020-05-19 18:08:26.003  INFO 10632 --- [http-nio-8080-exec-2] cn.edu.scujcc.api.ChannelController      : 当前用户是：Saria1589882713612
+2020-05-19 18:08:29.334 DEBUG 10632 --- [http-nio-8080-exec-7] o.s.d.m.r.query.MongoQueryCreator        : Created query Query: { "username" : "Saria", "password" : "619822043"}, Fields: {}, Sort: {}
+2020-05-19 18:08:29.334 DEBUG 10632 --- [http-nio-8080-exec-7] o.s.data.mongodb.core.MongoTemplate      : find using query: { "username" : "Saria", "password" : "619822043"} fields: Document{{}} for class: class cn.edu.scujcc.model.User in collection: user
+2020-05-19 18:08:29.335 DEBUG 10632 --- [http-nio-8080-exec-7] cn.edu.scujcc.service.UserService        : Saria1589882909335经过md5加密后：583a9c135e2296450f026b2a31d45a2c
+2020-05-19 18:08:38.347 DEBUG 10632 --- [http-nio-8080-exec-8] cn.edu.scujcc.AuthInterceptor            : response status:200
+2020-05-19 18:08:38.348 DEBUG 10632 --- [http-nio-8080-exec-8] cn.edu.scujcc.AuthInterceptor            : 当前用户是否登录？是
+2020-05-19 18:08:38.348  INFO 10632 --- [http-nio-8080-exec-8] cn.edu.scujcc.api.ChannelController      : 正在读取所有频道信息, token=583a9c135e2296450f026b2a31d45a2c
+2020-05-19 18:08:38.348  INFO 10632 --- [http-nio-8080-exec-8] cn.edu.scujcc.api.ChannelController      : 当前用户是：Saria1589882909335
+2020-05-19 18:09:24.509 ERROR 10632 --- [RMI TCP Connection(23)-127.0.0.1] n.s.e.store.disk.DiskStorageFactory      : Disk Write of SimpleKey [] failed: 
+
+java.io.NotSerializableException: cn.edu.scujcc.model.Comment
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject(Unknown Source)
+	at java.util.ArrayList.writeObject(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at java.io.ObjectStreamClass.invokeWriteObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeSerialData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.defaultWriteFields(Unknown Source)
+	at java.io.ObjectOutputStream.writeSerialData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject(Unknown Source)
+	at java.util.ArrayList.writeObject(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at java.io.ObjectStreamClass.invokeWriteObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeSerialData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.defaultWriteFields(Unknown Source)
+	at java.io.ObjectOutputStream.defaultWriteObject(Unknown Source)
+	at net.sf.ehcache.Element.writeObject(Element.java:867)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at java.io.ObjectStreamClass.invokeWriteObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeSerialData(Unknown Source)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject0(Unknown Source)
+	at java.io.ObjectOutputStream.writeObject(Unknown Source)
+	at net.sf.ehcache.util.MemoryEfficientByteArrayOutputStream.serialize(MemoryEfficientByteArrayOutputStream.java:97)
+	at net.sf.ehcache.store.disk.DiskStorageFactory.serializeElement(DiskStorageFactory.java:403)
+	at net.sf.ehcache.store.disk.DiskStorageFactory.write(DiskStorageFactory.java:385)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$DiskWriteTask.call(DiskStorageFactory.java:477)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$PersistentDiskWriteTask.call(DiskStorageFactory.java:1071)
+	at net.sf.ehcache.store.disk.DiskStorageFactory$IndexWriteTask.call(DiskStorageFactory.java:1108)
+	at net.sf.ehcache.store.disk.DiskStorageFactory.unbind(DiskStorageFactory.java:921)
+	at net.sf.ehcache.store.disk.DiskStore.dispose(DiskStore.java:664)
+	at net.sf.ehcache.store.CacheStore.dispose(CacheStore.java:327)
+	at net.sf.ehcache.Cache.dispose(Cache.java:2547)
+	at net.sf.ehcache.CacheManager.shutdown(CacheManager.java:1524)
+	at org.springframework.cache.ehcache.EhCacheManagerFactoryBean.destroy(EhCacheManagerFactoryBean.java:195)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:258)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1075)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1068)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1060)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1029)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Unknown Source)
+	at com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(Unknown Source)
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Unknown Source)
+	at com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(Unknown Source)
+	at com.sun.jmx.mbeanserver.PerInterface.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.MBeanSupport.invoke(Unknown Source)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(Unknown Source)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(Unknown Source)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor41.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+	at sun.rmi.transport.Transport$1.run(Unknown Source)
+	at sun.rmi.transport.Transport$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$255(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$1/798378474.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
